@@ -35,6 +35,8 @@ public class Consultant {
 
     private boolean active = true;
 
+    private String status = "AVAILABLE";
+
     private LocalDate createdDate = LocalDate.now();
 
 
@@ -98,6 +100,13 @@ public class Consultant {
         this.active = active;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public LocalDate getCreatedDate() {
         return createdDate;
